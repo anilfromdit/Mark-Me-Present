@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:id="@+id/my_R_layout"
+android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+tools:context=".AttendanceUsingIdPassActivity">
+>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/round_edit_text"
+    android:hint="Set Heading"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:id="@+id/nameET"
+    />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_edit_text"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Set Id"
+        android:textSize="16sp"
+        android:layout_below="@id/nameET"
+        android:textStyle="bold"
+        android:id="@+id/ta_id"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_edit_text"
+        android:padding="10dp"
+        android:hint="Set Password"
+        android:textSize="16sp"
+        android:layout_below="@id/ta_id"
+        android:textStyle="bold"
+        android:id="@+id/ta_pass"
+        />
+
+
+
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="Start"
+        android:layout_below="@id/ta_pass"
+    android:backgroundTint="@color/black"
+    android:id="@+id/start_btn"
+    />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="256sp"
+        android:text="0"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:id="@+id/count"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count"
+        android:layout_centerHorizontal="true"
+        android:text="Attendee(s)"
+        android:textStyle="bold"
+        android:id="@+id/a_text"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+
+        />
+</RelativeLayout>

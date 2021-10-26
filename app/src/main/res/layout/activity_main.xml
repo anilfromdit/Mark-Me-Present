@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    >
+
+    <Button
+        android:id="@+id/takeattendance"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:drawableLeft="@drawable/ic_take_atn"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/round_text_view"
+        android:text="Take Attendance"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/takeattendance"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/takeattendance"
+        android:id="@+id/using_qr"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/grey"
+        android:text="Using QR"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:id="@+id/using_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/takeattendance"
+        android:backgroundTint="@color/grey"
+        android:text="Using ID "
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/downloadattendance"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/round_text_view"
+        android:layout_below="@id/linearLayout"
+        android:drawableLeft="@drawable/ic_download_atn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Download Attendance List"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/markattandance"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/downloadattendance"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_text_view"
+        android:drawableLeft="@drawable/ic_mark_present"
+        android:text="Mark me present"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_below="@id/markattandance"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takeattendance"
+            android:id="@+id/mmp_using_qr"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:text="Using QR"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+        <Button
+            android:id="@+id/mmp_using_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takeattendance"
+            android:backgroundTint="@color/grey"
+            android:text="Using ID "
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:id="@+id/logout"
+
+        />
+
+
+</RelativeLayout>

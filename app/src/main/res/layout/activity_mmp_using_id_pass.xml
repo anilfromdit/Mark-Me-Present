@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MmpUsingIdPassActivity"
+    android:padding="10dp"
+
+    >
+
+    <EditText
+        android:id="@+id/mmp_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="Enter ID"
+        android:padding="15dp"
+        android:textSize="16sp" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:background="@drawable/round_edit_text"
+        android:hint="Enter Password"
+        android:layout_below="@id/mmp_id"
+        android:id="@+id/mmp_pass"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mmp_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="MMP"
+        android:id="@+id/mmp_start_btn"
+        android:backgroundTint="@color/black"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeAttendanceActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Enter Heading"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/nameET"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameET"
+        android:layout_centerHorizontal="true"
+        android:text="Start"
+        android:backgroundTint="@color/black"
+        android:id="@+id/startBtn"
+        />
+
+
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/qrCode"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout>

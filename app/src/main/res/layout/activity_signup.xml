@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".SignupActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:civ_border_width="4dp"
+                app:civ_border_color="#fae39d"
+                android:src="@drawable/logo"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey"
+                android:text="Name"
+                android:textSize="20dp"
+                android:id="@+id/nameTV"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/nameTV"
+                android:hint=" Eg. John"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/name"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:id="@+id/emailTV"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/emailTV"
+                android:hint=" Eg. john@example.com"
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/email"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/grey"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:id="@+id/genderTV"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:spinnerMode="dropdown"
+                android:id="@+id/gender"
+                android:layout_below="@id/genderTV"
+                android:background="@drawable/round_edit_text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:layout_marginTop="10dp"
+                android:text="Course"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:id="@+id/courseTV"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/courseTV"
+                android:hint=" Eg. B. Tech"
+
+                android:textColorHint="@color/grey"
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/course"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/course"
+                android:layout_marginTop="10dp"
+                android:text="Year"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:id="@+id/yearTV"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/yearTV"
+                android:hint= " Eg. 1"
+                android:inputType="number"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/grey"
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/year"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/year"
+                android:layout_marginTop="10dp"
+                android:text="SAP ID"
+                android:textSize="20dp"
+                android:textColor="@color/grey"
+                android:id="@+id/sapTV"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/sapTV"
+                android:textColor="@color/black"
+                android:hint="Eg. 10000XXXXX"
+                android:inputType="number"
+
+                android:textColorHint="@color/grey"
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/sap"
+                android:padding="10dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sap"
+                android:layout_marginTop="10dp"
+                android:text="Roll No."
+                android:textSize="20dp"
+                android:id="@+id/rollnoTV"
+                android:textColor="@color/grey"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/rollnoTV"
+                android:hint="Eg. 123456789"
+                android:inputType="number"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/grey"
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/rollno"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rollno"
+                android:layout_marginTop="10dp"
+                android:text="Password"
+                android:textSize="20dp"
+                android:textColor="@color/grey"
+                android:id="@+id/PasswordTV"
+                />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/PasswordTV"
+                    android:background="@drawable/round_edit_text"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+
+                    android:textColorHint="@color/grey"
+                    android:inputType="textPassword"
+                    android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:text="Already Have An Account?\nLogin Here"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:id="@+id/loginBtn"
+
+
+                />
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@id/loginBtn"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#063970"
+                android:text="Sign up"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
